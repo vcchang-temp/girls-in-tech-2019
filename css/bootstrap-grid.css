@@ -18,9 +18,11 @@ html {
 .container {
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 100px;
   margin-right: auto;
   margin-left: auto;
+  background: grey;
+ 
 }
 
 @media (min-width: 576px) {
@@ -56,12 +58,12 @@ html {
 }
 
 .row {
-  display: -ms-flexbox;
+  
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .no-gutters {
@@ -82,7 +84,7 @@ html {
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
   position: relative;
-  width: 100%;
+  width: 50%;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -93,6 +95,7 @@ html {
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-width: 100%;
+  
 }
 
 .col-auto {
@@ -318,9 +321,12 @@ html {
     max-width: 16.666667%;
   }
   .col-sm-3 {
-    -ms-flex: 0 0 25%;
+    /* -ms-flex: 0 0 25%; */
     flex: 0 0 25%;
-    max-width: 25%;
+    /* max-width: 25%; */
+    padding-left: 30%;
+    margin-left: 50px;
+    
   }
   .col-sm-4 {
     -ms-flex: 0 0 33.333333%;
