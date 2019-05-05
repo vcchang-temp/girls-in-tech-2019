@@ -15,7 +15,7 @@ function redirectToRemoveTrees()
 
     var x = document.getElementById("tree").value;
 
-    console.log(x);
+  /*   console.log(x); */
 
     window.location.href = "matchingPage.html?trees="+x;
 
