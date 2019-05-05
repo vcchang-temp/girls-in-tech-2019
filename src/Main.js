@@ -1,8 +1,17 @@
-let goodCompanyTrees = {};
+let goodCompanyTrees = {
+    "TreePlanters & Co": 5,
+    "Summit Reforestation": 10,
+    "Trees Canada": 8,
+    "OneTreePlanted": 1,
+    "Tree Lovers Inc": 20};
 let goodCompanyTreeCount = 0;
 let badCompanyTreeCount = 0;
 let currentGoodCompanyIndex = 0;
 let ifLeft;
+
+
+
+let selectedTreesToCut = document.getElementById("selectedTreesToCut");
 
 function redirectToPlantTrees() 
 {
@@ -29,7 +38,7 @@ function loadPlantTreesMsg()
 {
     let msgDiv = document.getElementById("plantTreesMsg");
     let noTreesToPlant = document.getElementById("noTreesToPlant");
-    let msg = `<h1>Thank you for adding trees to a total of ${goodCompanyTreeCount} trees planted so far!</h1>`;
+    let msg = `<h1>Thank you for planting trees!</h1>`;
     msgDiv.insertAdjacentHTML('afterbegin', `<div>${msg}</div>`);
 }
 
@@ -66,7 +75,7 @@ function plantTrees(companyName, noOfTrees)
 	// display badCompanyTreeCount, good company name and no of trees > 0, swipe left button, and swipe right button w/ input box
 	// if user inputs number and presses swipe right, then call swipeRight
 	// if user inputs presses swipe left, then call swipeLeft
-			// move to next company
+			/ move to next company
 			// keep going until badCompanyTreeCount === 0
 	
 } */
