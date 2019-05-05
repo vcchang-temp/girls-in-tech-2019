@@ -30,7 +30,7 @@ function loadPlantTreesMsg()
 {
     let msgDiv = document.getElementById("plantTreesMsg");
     let noTreesToPlant = document.getElementById("noTreesToPlant");
-    let msg = `<h1>Thank you for adding trees to a total of ${goodCompanyTreeCount} trees planted so far!</h1>`;
+    let msg = `<h1>Thank you for planting trees!</h1>`;
     msgDiv.insertAdjacentHTML('afterbegin', `<div>${msg}</div>`);
 }
 
