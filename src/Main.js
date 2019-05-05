@@ -44,8 +44,6 @@ function removeTrees(noOfTrees)
         // dont run program
     }
 
-    recursionFunction();
-
 	// display badCompanyTreeCount, good company name and no of trees > 0, swipe left button, and swipe right button w/ input box
 	// if user inputs number and presses swipe right, then call swipeRight
 	// if user inputs presses swipe left, then call swipeLeft
