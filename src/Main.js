@@ -5,8 +5,7 @@ let currentGoodCompanyIndex = 0;
 
 function redirectToRemoveTrees() 
 {
-    alert("a");
-    window.location.href = ""
+    window.location.href = "matchingPage.html";
 }
 
 function plantTrees(companyName, noOfTrees) 
