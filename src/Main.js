@@ -3,10 +3,14 @@ let goodCompanyTreeCount = 0;
 let badCompanyTreeCount = 0;
 let currentGoodCompanyIndex = 0;
 
-//
+function redirectToRemoveTrees() 
+{
+    alert("a");
+    window.location.href = ""
+}
 
-function plantTrees(companyName, noOfTrees) {
-
+function plantTrees(companyName, noOfTrees) 
+{
     if (companyName == null || companyName === undefined || companyName === "") {
         console.error("companyName is not valid input");
     }
