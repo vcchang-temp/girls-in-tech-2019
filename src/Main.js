@@ -3,6 +3,11 @@ let goodCompanyTreeCount = 0;
 let badCompanyTreeCount = 0;
 let currentGoodCompanyIndex = 0;
 
+function redirectToPlantTrees() 
+{
+    window.location.href = "plantTreesSuccessPage.html";
+}
+
 function redirectToRemoveTrees() 
 {
     window.location.href = "matchingPage.html";
