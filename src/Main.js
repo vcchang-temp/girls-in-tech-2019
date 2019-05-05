@@ -139,7 +139,5 @@ function swipeRight()
 
 function array(){
 
-    var gc=['bc','df','gy'];
-
-    return gc;
+    return goodCompanyTrees;
 }
