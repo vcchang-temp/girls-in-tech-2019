@@ -13,6 +13,11 @@ function redirectToRemoveTrees()
     window.location.href = "matchingPage.html";
 }
 
+function redirectToTotalMatchSuccess() 
+{
+    window.location.href = "matchSuccessPage.html";
+}
+
 function plantTrees(companyName, noOfTrees) 
 {
     if (companyName == null || companyName === undefined || companyName === "") {
