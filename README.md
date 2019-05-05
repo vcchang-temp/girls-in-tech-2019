@@ -6,7 +6,7 @@
 Timber is the [Tinder](https://tinder.com/) for tree-planting organizations and land-development companies. Land developers who want to sustainably develop on land that has trees on it will be matched with organizations that plant trees. 
 
 #### What problem does it try to solve? What was the inspiration behind the project idea?
-The goal of Timber is to decrease the negative impact of deforestation. The inspiration of this app was the Girls in Tech 2019 challenge statement to use technology to educate and connect people to the natural wor. ld. Timber aims to connect land developers need to cut down trees for development purposes, but who want to develop with sustainability in mind and don't necessarily know who to turn to or how to do so.
+The goal of Timber is to decrease the negative impact of deforestation. The inspiration of this app was the Girls in Tech 2019 challenge statement to use technology to educate and connect people to the natural world. Timber aims to connect land developers need to cut down trees for development purposes, but who want to develop with sustainability in mind and don't necessarily know who to turn to or how to do so.
 
 #### What is your stack? What language did you program it in? What API’s did you use?
 HTML, CSS, JavaScript. 

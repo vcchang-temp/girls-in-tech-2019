@@ -1883,6 +1883,38 @@ pre code {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.form-control1 {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 60px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: hsl(210, 11%, 78%);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  
+}
+
+.form-control2 {
+  display: block;
+  width: 50px;
+  height: calc(1.5em + 0.75rem + 60px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: hsl(210, 11%, 78%);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  
+}
+
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
