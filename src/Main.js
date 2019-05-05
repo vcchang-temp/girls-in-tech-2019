@@ -2,6 +2,7 @@ let goodCompanyTrees = {};
 let goodCompanyTreeCount = 0;
 let badCompanyTreeCount = 0;
 let currentGoodCompanyIndex = 0;
+let ifLeft;
 
 function redirectToPlantTrees() 
 {
@@ -35,7 +36,7 @@ function plantTrees(companyName, noOfTrees)
     }
 }
 
-function removeTrees(noOfTrees)
+/*function removeTrees(noOfTrees)
 {
 
     badCompanyTreeCount = document.getElementById("numberOfTreesToCutDown");
@@ -43,16 +44,13 @@ function removeTrees(noOfTrees)
     if (goodCompanyTreeCount < badCompanyTreeCount) {
         // dont run program
     }
-
-    recursionFunction();
-
 	// display badCompanyTreeCount, good company name and no of trees > 0, swipe left button, and swipe right button w/ input box
 	// if user inputs number and presses swipe right, then call swipeRight
 	// if user inputs presses swipe left, then call swipeLeft
 			// move to next company
 			// keep going until badCompanyTreeCount === 0
 	
-}
+} */
 
 function recursionFunction() {
 
@@ -60,6 +58,7 @@ function recursionFunction() {
 
     if (goodCompanyTrees[currentGoodCompanyIndex] == 0) {
         currentGoodCompanyIndex++;
+        //recursive functon
     }
 
     if (badCompanyTreeCount == 0) {
@@ -77,13 +76,13 @@ function recursionFunction() {
     //    index back to 0
 
 
-    if (swipeLeft()) {
+    if (ifLeft === true) {
         // do nothing go to next index
         currentGoodCompanyIndex++;
         recursionFunction();
     }
 
-    if (swipeRight()) {
+    if (ifLeft === false) {
         let selectedTreesToCut = document.getElementById("selectedTreesToCut");
         badCompanyTreeCount -= selectedTreesToCut;
         goodCompanyTrees[currentGoodCompanyIndex] -= selectedTreesToCut;
@@ -95,12 +94,16 @@ function recursionFunction() {
 // TODO
 function swipeLeft() 
 {
+	ifLeft == true;
+	recursionFunction();
 }
 
 // TODO
 function swipeRight() 
 {
-	if (goodCompanyTrees[currentGoodCompanyIndex] >= document.getElementById("#swipeRightVal")) {
+	ifLeft == false;
+	/*if (goodCompanyTrees[currentGoodCompanyIndex] >= document.getElementById("#swipeRightVal")) {
 		
-	}
+	}*/
+	recursionFunction();
 }
