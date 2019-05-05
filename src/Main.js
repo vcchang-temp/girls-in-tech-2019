@@ -1,4 +1,4 @@
-let goodCompanyTrees = {
+var goodCompanyTrees = {
     "TreePlanters & Co": 5,
     "Summit Reforestation": 10,
     "Trees Canada": 8,
@@ -138,5 +138,5 @@ function swipeRight()
 
 function array(){
 
-    return goodCompanyTrees;
+    return Object.entries(goodCompanyTrees)[currentGoodCompanyIndex];
 }
