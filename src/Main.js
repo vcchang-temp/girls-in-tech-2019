@@ -1,6 +1,7 @@
 let goodCompanyTrees = {};
 let goodCompanyTreeCount = 0;
 let badCompanyTreeCount = 0;
+let currentGoodCompanyIndex = 0;
 
 //
 
@@ -28,19 +29,24 @@ function plantTrees(companyName, noOfTrees) {
 
 function removeTrees(noOfTrees)
 {
-	// lead user to second page
-	// on second pg, display badCompanyTreeCount, good company name and no of trees > 0, swipe left button, and swipe right button w/ input box
+	// display badCompanyTreeCount, good company name and no of trees > 0, swipe left button, and swipe right button w/ input box
 	// if user inputs number and presses swipe right, then call swipeRight
 	// if user inputs presses swipe left, then call swipeLeft
 			// move to next company
 			// keep going until badCompanyTreeCount === 0
+	
 }
 
-function swipeRight(noOfTrees) {
-	// check if input no <= good company tree count
-	// decrement good co tree count and badCompanyTreeCount by input
+// TODO
+function swipeLeft() 
+{
+
 }
 
-function swipeLeft(noOfTrees) {
-	// display next company
+// TODO
+function swipeRight() 
+{
+	if (goodCompanyTrees[currentGoodCompanyIndex] >= document.getElementById("#swipeRightVal")) {
+		
+	}
 }
