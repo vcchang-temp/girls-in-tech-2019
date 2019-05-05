@@ -1,8 +1,17 @@
-let goodCompanyTrees = {};
+let goodCompanyTrees = {
+    "TreePlanters & Co": 5,
+    "Summit Reforestation": 10,
+    "Trees Canada": 8,
+    "OneTreePlanted": 1,
+    "Tree Lovers Inc": 20};
 let goodCompanyTreeCount = 0;
 let badCompanyTreeCount = 0;
 let currentGoodCompanyIndex = 0;
 let ifLeft;
+
+
+
+let selectedTreesToCut = document.getElementById("selectedTreesToCut");
 
 function redirectToPlantTrees() 
 {
