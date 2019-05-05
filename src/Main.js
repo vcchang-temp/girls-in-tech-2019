@@ -12,7 +12,6 @@ function redirectToPlantTrees()
 function redirectToRemoveTrees() 
 {
     
-
     var x = document.getElementById("tree").value;
 
   /*   console.log(x); */
@@ -130,7 +129,7 @@ function swipeRight()
 
 function array(){
 
-    var gc=['bc','df','gy'];
+    var gc=['Tree','df','gy'];
 
     return gc;
 }
