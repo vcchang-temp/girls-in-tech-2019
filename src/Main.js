@@ -2,6 +2,7 @@ let goodCompanyTrees = {};
 let goodCompanyTreeCount = 0;
 let badCompanyTreeCount = 0;
 
+//
 
 function plantTrees(companyName, noOfTrees)
 {
