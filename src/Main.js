@@ -20,7 +20,6 @@ function redirectToPlantTrees()
 
 function redirectToRemoveTrees() 
 {
-    
 
     var x = document.getElementById("tree").value;
 
