@@ -4,10 +4,18 @@ let badCompanyTreeCount = 0;
 
 //
 
-function plantTrees(companyName, noOfTrees)
-{
-    if (companyName in goodCompanyTrees) {
+function plantTrees(companyName, noOfTrees) {
 
+    if (companyName == null || companyName === undefined || companyName === "") {
+        console.error("companyName is not valid input");
+    }
+
+    if (noOfTrees == null || noOfTrees === undefined || noOfTrees === 0) {
+        console.error("noOfTrees is not valid input");
+    }
+
+    else if (companyName in goodCompanyTrees) {
+        // company already exists just add new values to it
         goodCompanyTrees[companyName] = noOfTrees;
         goodCompanyTreeCount += noOfTrees;
 
