@@ -26,6 +26,14 @@ function redirectToTotalMatchSuccess()
     window.location.href = "matchSuccessPage.html";
 }
 
+function loadPlantTreesMsg() 
+{
+    let msgDiv = document.getElementById("plantTreesMsg");
+    let noTreesToPlant = document.getElementById("noTreesToPlant");
+    let msg = `<h1>Thank you for adding trees to a total of ${goodCompanyTreeCount} trees planted so far!</h1>`;
+    msgDiv.insertAdjacentHTML('afterbegin', `<div>${msg}</div>`);
+}
+
 function plantTrees(companyName, noOfTrees)
 {
     if (companyName == null || companyName === undefined || companyName === "") {
