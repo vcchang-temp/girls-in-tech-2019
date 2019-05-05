@@ -20,12 +20,27 @@ function redirectToPlantTrees()
 
 function redirectToRemoveTrees() 
 {
-    window.location.href = "matchingPage.html";
+    
+
+    var x = document.getElementById("tree").value;
+
+  /*   console.log(x); */
+
+    window.location.href = "matchingPage.html?trees="+x;
+
 }
 
 function redirectToTotalMatchSuccess()
 {
     window.location.href = "matchSuccessPage.html";
+}
+
+function loadPlantTreesMsg() 
+{
+    let msgDiv = document.getElementById("plantTreesMsg");
+    let noTreesToPlant = document.getElementById("noTreesToPlant");
+    let msg = `<h1>Thank you for adding trees to a total of ${goodCompanyTreeCount} trees planted so far!</h1>`;
+    msgDiv.insertAdjacentHTML('afterbegin', `<div>${msg}</div>`);
 }
 
 function plantTrees(companyName, noOfTrees)
@@ -120,4 +135,11 @@ function swipeRight()
 		
 	}*/
 	recursionFunction();
+}
+
+function array(){
+
+    var gc=['bc','df','gy'];
+
+    return gc;
 }

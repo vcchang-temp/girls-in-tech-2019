@@ -99,7 +99,7 @@
 }
 
 
-#swipe-right,#swipe-left{
+.xx{
 
    display: flex;
    /* align-items: stretch; */
@@ -118,3 +118,11 @@
    border: 1px solid grey;
 }
 
+h1 {
+   font-family: 'Roboto', sans-serif;
+   color: white;
+}
+
+ .successBackGround {
+    background: #4CAF50;
+ }
