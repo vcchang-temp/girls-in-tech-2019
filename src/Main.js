@@ -76,7 +76,7 @@ function plantTrees(companyName, noOfTrees)
 	// display badCompanyTreeCount, good company name and no of trees > 0, swipe left button, and swipe right button w/ input box
 	// if user inputs number and presses swipe right, then call swipeRight
 	// if user inputs presses swipe left, then call swipeLeft
-			// move to next company
+			/ move to next company
 			// keep going until badCompanyTreeCount === 0
 	
 } */
