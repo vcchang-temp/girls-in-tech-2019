@@ -75,6 +75,6 @@ h1 {
    font-family: 'Roboto', sans-serif;
  }
 
- #matchSuccessBackGround {
+ .successBackGround {
     background: #4CAF50;
  }
