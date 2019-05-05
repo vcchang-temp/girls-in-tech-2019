@@ -8,6 +8,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="images/tb.ico">
 <link rel="stylesheet" href="css/bootstrap.css">
 <script src="/js/jquery.3.4.0.min.js"></script>
+<script src="src/Main.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                     
                                  <label for=" label-tree">Number of trees left :</label> 
                                  <label for=" label-tree" id="result" class="labeltree2"> </label>
-                                 <label for=" label-tree" class="input form-control2"></label> 
+                                 <label for=" label-tree" id="show1" class="input form-control2"></label> 
                                  
                                  <label for=" label-tree" class="input form-control2"></label> 
                                  
@@ -38,7 +39,34 @@
                                        
                 </div>
 
-                <div class="card-footer">
+                <script>
+                
+                var y=
+                  decodeURI(window.location.search)
+
+                        .replace('?', '')
+
+                        .split('&')
+
+                        .map(param => param.split('='))
+
+                        .reduce((values, [ key, value ]) => {
+
+                        values[ key ] = value
+
+                        return values
+
+                        }, {});
+
+                console.log(y);
+                if(y.trees)
+                document.getElementById("result").innerHTML=y.trees;
+                document.getElementById("show1").innerHTML= array()[Math.floor(Math.random() * array().length)];
+                
+                </script>
+
+
+                <div class="card-footer xx">
 
                         <div id="swipe-left">
                            

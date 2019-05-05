@@ -11,7 +11,14 @@ function redirectToPlantTrees()
 
 function redirectToRemoveTrees() 
 {
-    window.location.href = "matchingPage.html";
+    
+
+    var x = document.getElementById("tree").value;
+
+    console.log(x);
+
+    window.location.href = "matchingPage.html?trees="+x;
+
 }
 
 function redirectToTotalMatchSuccess()
@@ -111,4 +118,11 @@ function swipeRight()
 		
 	}*/
 	recursionFunction();
+}
+
+function array(){
+
+    var gc=['bc','df','gy'];
+
+    return gc;
 }
