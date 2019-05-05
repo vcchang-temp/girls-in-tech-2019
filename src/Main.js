@@ -29,6 +29,15 @@ function plantTrees(companyName, noOfTrees) {
 
 function removeTrees(noOfTrees)
 {
+
+    badCompanyTreeCount = document.getElementById("numberOfTreesToCutDown");
+
+    if (goodCompanyTreeCount < badCompanyTreeCount) {
+        // dont run program
+    }
+
+    recursionFunction();
+
 	// display badCompanyTreeCount, good company name and no of trees > 0, swipe left button, and swipe right button w/ input box
 	// if user inputs number and presses swipe right, then call swipeRight
 	// if user inputs presses swipe left, then call swipeLeft
@@ -37,10 +46,47 @@ function removeTrees(noOfTrees)
 	
 }
 
+function recursionFunction() {
+
+    currentGoodCompanyIndex = currentGoodCompanyIndex % (Object.keys(goodCompanyTrees).length);
+
+    if (goodCompanyTrees[currentGoodCompanyIndex] == 0) {
+        currentGoodCompanyIndex++;
+    }
+
+    if (badCompanyTreeCount == 0) {
+        return;
+    }
+
+    // at bob
+    // at john
+    //    swiped right: 2
+    //    badCompanyTreeCount = 3
+    //    goodCompanyTreeCount = 22
+    // at sara
+    //    swiped left
+    //    index is now 3
+    //    index back to 0
+
+
+    if (swipeLeft()) {
+        // do nothing go to next index
+        currentGoodCompanyIndex++;
+        recursionFunction();
+    }
+
+    if (swipeRight()) {
+        let selectedTreesToCut = document.getElementById("selectedTreesToCut");
+        badCompanyTreeCount -= selectedTreesToCut;
+        goodCompanyTrees[currentGoodCompanyIndex] -= selectedTreesToCut;
+        currentGoodCompanyIndex++;
+        recursionFunction();
+    }
+}
+
 // TODO
 function swipeLeft() 
 {
-
 }
 
 // TODO
