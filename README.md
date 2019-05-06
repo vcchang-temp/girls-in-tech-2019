@@ -1,4 +1,4 @@
-# Timber (Girls in Tech 2019 hackathon project)
+# Timber
 
 ### _Match. Harvest. Plant._
 
@@ -11,10 +11,9 @@ The goal of Timber is to decrease the negative impact of deforestation. The insp
 #### What is your stack? What language did you program it in? What API’s did you use?
 HTML, CSS, JavaScript. 
 
-#### Which part was the most difficult to implement and why?
-The most difficult part was simplifying the project for the time period of the hackathon so that it would cover the most important and useful feature (the matching) yet be useful to our audience of land developers and tree planters. 
+#### What challenges did you run into?
+One of the challenges we ran into was simplifying the project for the time period of the hackathon so that it would cover the most important and useful feature (the matching) yet be useful to our audience of land developers and tree planters. It was also most of our team's first time using JavaScript (and for some, HTML and CSS as well) - learning new technologies in a hackathon was not easy but became more fun when we learned how to leverage one another's strengths and skills.
 
 #### What are the next steps to complete the project?
 Timber is not yet an app that comprehensively accounts for the complete impact of removing trees - after all, the benefits that a 100-year-old tree provides to its ecosystem is different from the benefits that a newly-planted tree supplies that same ecosystem. Therefore, the next steps include addressing how Timber can more precisely and accurately match the trees that are destined for harvesting with trees that have a similar environmental impact to the ones that will be cut down. 
 For example, Timber would make it possible for a land developer that wishes to cut down an acre of trees ranging in age from 10-40 years old, to be matched to organizations that have already been planted trees that are of the same species and further along in their lifecycle and in the same age range. From a technical aspect, this will mean implementing advanced search and filtering criteria.
-
